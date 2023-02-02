@@ -4,19 +4,19 @@ import {
   Routes,
   Route,
 } from 'react-router-dom';
-import NavBar from './components/NavBar';
+import NavBar from './components/Navbar';
 import Rockets from './components/RocketsContainer';
 import Missions from './components/MissionsContainer';
-import MyProfile from './components/MyProfile';
+import Profile from './components/Profile';
 
 function App() {
   return (
-    <div className="bg-dark App">
+    <div className="App">
       <NavBar />
       <Routes>
         <Route path="/" element={<Rockets />} />
         <Route path="/Missions/" element={<Missions />} />
-        <Route path="/MyProfile/" element={<MyProfile />} />
+        <Route path="/MyProfile/" element={<Profile />} />
       </Routes>
     </div>
   );

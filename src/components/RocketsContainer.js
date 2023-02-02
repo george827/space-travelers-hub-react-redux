@@ -1,16 +1,16 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { Container } from 'react-bootstrap';
-import RocketCard from './RocketList';
+import RocketList from './RocketList';
 
 const Rockets = () => {
-  const myRockets = useSelector((state) => state.rockets);
+  const RocketState = useSelector((state) => state.rockets);
   return (
     <Container>
       <br />
       {
-        myRockets.map((rocket) => (
-          <RocketCard
+        RocketState.map((rocket) => (
+          <RocketList
             key={rocket.id}
             id={rocket.id}
             rocketName={rocket.rocketName}

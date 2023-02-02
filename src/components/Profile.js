@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { Container, Table } from 'react-bootstrap';
 
-function MyProfile() {
+function Profile() {
   const missions = useSelector((state) => state.missions);
   const reservedMissions = missions.filter((mission) => mission.reserved);
   const rockets = useSelector((state) => state.rockets);
@@ -12,7 +12,7 @@ function MyProfile() {
     <div className="ProfileContent">
       <Container className="d-flex">
         <Container>
-          <Table striped bordered hover variant="dark">
+          <Table striped bordered hover variant="light">
             <thead>
               <tr>
                 <th>My Missions</th>
@@ -30,7 +30,7 @@ function MyProfile() {
           </Table>
         </Container>
         <Container>
-          <Table striped bordered hover variant="dark">
+          <Table striped bordered hover variant="light">
             <thead>
               <tr>
                 <th>My Rockets</th>
@@ -52,4 +52,4 @@ function MyProfile() {
   );
 }
 
-export default MyProfile;
+export default Profile;

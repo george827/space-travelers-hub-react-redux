@@ -2,9 +2,9 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { Card, Button, Badge } from 'react-bootstrap';
 import { PropTypes } from 'prop-types';
-import { reserveRocket, cancelRocket } from '../redux/rockets';
+import { reserveRocket, cancelRocket } from '../redux/rockets/rockets';
 
-function RocketCard({
+function RocketList({
   id,
   rocketName,
   description,
@@ -22,15 +22,15 @@ function RocketCard({
     <Card key={id} expand="md" className="HorizontalCard">
       <Card.Img variant="left" src={flickrImages} className="RocketImage" />
       <Card.Body>
-        <Card.Title className="RocketName text-light">{rocketName}</Card.Title>
+        <Card.Title className="RocketName">{rocketName}</Card.Title>
         {
           reserved
             ? (
               <div>
 
-                <div className="CardTextContainer text-light">
+                <div className="CardTextContainer">
                   <Card.Text>
-                    <Badge bg="info" className="text-dark">Reserved</Badge>
+                    <Badge bg="info">Reserved</Badge>
                     {' '}
                     {description}
                   </Card.Text>
@@ -40,7 +40,7 @@ function RocketCard({
             )
             : (
               <div>
-                <div className="CardTextContainer text-light">
+                <div className="CardTextContainer">
                   <Card.Text>{description}</Card.Text>
                 </div>
                 <Button variant="outline-info" className="ReserveButton" onClick={() => reserveMyRocket(id)}>Reserve Rocket</Button>
@@ -52,7 +52,7 @@ function RocketCard({
   );
 }
 
-RocketCard.propTypes = {
+RocketList.propTypes = {
   id: PropTypes.number.isRequired,
   rocketName: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
@@ -60,4 +60,4 @@ RocketCard.propTypes = {
   reserved: PropTypes.bool.isRequired,
 };
 
-export default RocketCard;
+export default RocketList;

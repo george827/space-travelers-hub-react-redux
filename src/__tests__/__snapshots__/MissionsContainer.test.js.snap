@@ -11,7 +11,7 @@ Array [
       className="table-responsive"
     >
       <table
-        className="table table-dark table-striped table-bordered table-hover"
+        className="table table-light table-striped table-bordered table-hover"
       >
         <thead>
           <tr>

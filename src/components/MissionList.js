@@ -1,7 +1,7 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { joinMission, leaveMission } from '../redux/missions';
+import { joinMission, leaveMission } from '../redux/missions/missions';
 
 const MissionList = ({
   id, name, description, reserved,
@@ -10,13 +10,13 @@ const MissionList = ({
   return (
     <>
       <tr key={id}>
-        <th scope="row" className="text-light">{name}</th>
-        <td className="w-50 text-light">{description}</td>
+        <th scope="row">{name}</th>
+        <td className="w-50">{description}</td>
         <td>
           {
         reserved
-          ? <span className="badge bg-info text-dark">Active Member</span>
-          : <span className="badge bg-light text-dark">Not a Member</span>
+          ? <span className="badge bg-info ">Active Member</span>
+          : <span className="badge bg-secondary">Not a Member</span>
           }
         </td>
         <td>

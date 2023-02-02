@@ -3,7 +3,7 @@
 exports[`Header Component Renders correctly 1`] = `
 <nav
   activekey="/"
-  className="Navbar navbar navbar-expand-md navbar-dark sticky-top"
+  className="Navbar border-bottom navbar navbar-expand-md navbar-light sticky-top"
 >
   <div
     className="NavContainer container"
@@ -20,7 +20,7 @@ exports[`Header Component Renders correctly 1`] = `
         className="Logo"
         src="logo.png"
       />
-      Space Travelers' Hub
+      Space Travelers Hub
     </a>
     <button
       aria-controls="responsive-navbar-nav"

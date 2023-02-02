@@ -11,7 +11,7 @@ exports[`MyProfile Component renders correctly 1`] = `
       className="container"
     >
       <table
-        className="table table-dark table-striped table-bordered table-hover"
+        className="table table-light table-striped table-bordered table-hover"
       >
         <thead>
           <tr>
@@ -27,7 +27,7 @@ exports[`MyProfile Component renders correctly 1`] = `
       className="container"
     >
       <table
-        className="table table-dark table-striped table-bordered table-hover"
+        className="table table-light table-striped table-bordered table-hover"
       >
         <thead>
           <tr>

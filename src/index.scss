@@ -2,7 +2,6 @@
   html,
   body,
   #root {
-    background-color: #212529;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -23,7 +22,6 @@
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #212529;
     height: 100%;
   }
 
@@ -36,8 +34,6 @@
       "Courier New",
       monospace;
   }
-
-  background-color: #212529;
 }
 
 @import "~bootstrap/scss/bootstrap.scss";
