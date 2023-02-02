@@ -1,22 +1,22 @@
 import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
-import planet from '../images/saturn2.png';
+import logo from '../images/logo.png';
 
 function NavBar() {
   return (
     <Navbar activekey={window.location.pathname} expand="md" sticky="top" variant="dark" className="Navbar">
       <Container className="NavContainer">
-        <LinkContainer to="/space_travelers_hub/" className="LogoContainer" rel="noopener noreferrer">
+        <LinkContainer to="/" className="LogoContainer" rel="noopener noreferrer">
           <Navbar.Brand className="SpaceTravelers">
-            <img src={planet} alt="Planet logo" className="Logo" />
+            <img src={logo} alt="Planet logo" className="Logo" />
             Space Travelers&apos; Hub
           </Navbar.Brand>
         </LinkContainer>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse>
           <Nav className="ms-auto d-flex">
-            <LinkContainer to="/space_travelers_hub/" rel="noopener noreferrer" className="MyLink">
+            <LinkContainer to="/" rel="noopener noreferrer" className="MyLink">
               <Nav.Link>Rockets</Nav.Link>
             </LinkContainer>
 

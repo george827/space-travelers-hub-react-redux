@@ -1,5 +1,5 @@
 @import "~bootstrap/scss/bootstrap";
-@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 
 a,
 a:hover,
@@ -37,7 +37,7 @@ img {
 
 .navbar-brand {
   font-size: 1.9rem !important;
-  font-family: "Kanit", sans-serif;
+  font-family: 'Kanit', sans-serif;
 }
 
 .Logo {
@@ -123,7 +123,7 @@ span {
 @media (max-width: 450px) {
   .navbar-brand {
     font-size: 1.4rem !important;
-    font-family: "Kanit", sans-serif;
+    font-family: 'Kanit', sans-serif;
   }
 
   .Logo {

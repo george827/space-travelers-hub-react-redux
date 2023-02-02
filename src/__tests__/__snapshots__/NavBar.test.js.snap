@@ -9,16 +9,16 @@ exports[`Header Component Renders correctly 1`] = `
     className="NavContainer container"
   >
     <a
-      className="LogoContainer SpaceTravelers navbar-brand"
-      href="/space_travelers_hub/"
+      className="LogoContainer SpaceTravelers active navbar-brand"
+      href="/"
       onClick={[Function]}
       rel="noopener noreferrer"
-      style={null}
+      style={Object {}}
     >
       <img
         alt="Planet logo"
         className="Logo"
-        src="saturn2.png"
+        src="logo.png"
       />
       Space Travelers' Hub
     </a>
@@ -42,13 +42,13 @@ exports[`Header Component Renders correctly 1`] = `
         onKeyDown={[Function]}
       >
         <a
-          className="MyLink nav-link"
-          data-rr-ui-event-key="/space_travelers_hub/"
+          className="MyLink  active nav-link"
+          data-rr-ui-event-key="/"
           disabled={false}
-          href="/space_travelers_hub/"
+          href="/"
           onClick={[Function]}
           rel="noopener noreferrer"
-          style={null}
+          style={Object {}}
         >
           Rockets
         </a>

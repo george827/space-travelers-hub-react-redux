@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { Container } from 'react-bootstrap';
-import RocketCard from './RocketCard';
+import RocketCard from './RocketList';
 
 const Rockets = () => {
   const myRockets = useSelector((state) => state.rockets);

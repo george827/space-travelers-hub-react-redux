@@ -46,7 +46,7 @@ export default rockets;
 export const getRocketsApi = () => async (dispatch) => {
   const response = await fetch(rocketsUrl);
   const rockets = await response.json();
-  const formatRockets = rockets.map((e) => {
+  const theRockets = rockets.map((e) => {
     const obj = {
       id: e.id,
       rocketName: e.rocket_name,
@@ -56,5 +56,5 @@ export const getRocketsApi = () => async (dispatch) => {
     };
     return obj;
   });
-  dispatch(getRocketsAction(formatRockets));
+  dispatch(getRocketsAction(theRockets));
 };
