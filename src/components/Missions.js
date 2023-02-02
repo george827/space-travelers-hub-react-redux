@@ -11,7 +11,7 @@ const Missions = () => {
     if (missions.length < 1) {
       dispatch(getMissions());
     }
-  }, [missions]);
+  }, [dispatch, missions]);
 
   return (
     <>
