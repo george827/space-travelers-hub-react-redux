@@ -34,11 +34,11 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [Space travelers hub] <a name="about-project"></a>
 
 > Describe your project in 1 or 2 sentences.
 
-**[your_project__name]** is a...
+**[Space travelers hub]** is a...
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -73,9 +73,9 @@
 
 > Describe between 1-3 key features of the application.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **[Fetch space-x mission and rockets]**
+- **[Reserve a Rocket]**
+- **[Join mission]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -101,17 +101,18 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-<!--
-Example command:
+
 
 ```sh
- gem install rails
+ npm start
 ```
- -->
+
 
 ### Setup
 
 Clone this repository to your desired folder:
+
+Clone this repository by running `git clone https://github.com/george827/space-travelers-hub-react-redux.git` in the terminal.
 
 <!--
 Example commands:
@@ -179,17 +180,17 @@ Example:
 
 > Mention all of the collaborators of this project.
 
-👤 **Author1**
+👤 **George**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@george827](https://github.com/george827)
+- Twitter: [George Kamau](https://twitter.com/geok8376)
+- LinkedIn: [George Kinyanjui](https://www.linkedin.com/in/george-kinyanjui-030468149/)
 
-👤 **Author2**
+👤 **tanveerisonline ** 
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@tanveerisonline ](https://github.com/tanveerisonline )
+- Twitter: [@Tanveer Ahmad](https://twitter.com/Tanveer98589023)
+- LinkedIn: [Tanveer Ahmad](https://www.linkedin.com/in/tanveer-ahmad-899462211/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -211,7 +212,7 @@ Example:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/george827/space-travelers-hub-react-redux/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -255,8 +256,8 @@ I would like to thank...
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](https://github.com/george827/space-travelers-hub-react-redux/blob/development/LICENSE) licensed.
 
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
