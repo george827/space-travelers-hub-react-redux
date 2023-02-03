@@ -46,11 +46,11 @@ const missionsurl = 'https://api.spacexdata.com/v3/missions';
 export const getMissions = () => async (dispatch) => {
   const response = await fetch(missionsurl);
   const missions = await response.json();
-  const formatMissions = missions.map((e) => {
+  const formatMissions = missions.map((data) => {
     const obj = {
-      mission_id: e.mission_id,
-      mission_name: e.mission_name,
-      description: e.description,
+      mission_id: data.mission_id,
+      mission_name: data.mission_name,
+      description: data.description,
       reserved: false,
     };
     return obj;

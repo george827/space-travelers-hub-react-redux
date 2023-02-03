@@ -1,7 +1,7 @@
 const FETCH_ROCKETS = 'FETCH_ROCKETS';
 const RESERVE_ROCKET = 'RESERVE_ROCKET';
 const CANCEL_ROCKET = 'CANCEL_ROCKET';
-const rocketsUrl = 'https://api.spacexdata.com/v3/rockets';
+const rocketsUrl = 'https://api.spacexdata.com/v4/rockets';
 
 export const getRockets = (payload) => ({
   type: FETCH_ROCKETS,
@@ -47,12 +47,12 @@ export default rockets;
 export const getRocketsApi = () => async (dispatch) => {
   const response = await fetch(rocketsUrl);
   const rockets = await response.json();
-  const theRockets = rockets.map((e) => {
+  const theRockets = rockets.map((data) => {
     const obj = {
-      id: e.id,
-      rocketName: e.rocket_name,
-      description: e.description,
-      flickrImages: e.flickr_images,
+      id: data.id,
+      rocketName: data.name,
+      description: data.description,
+      flickrImages: data.flickr_images,
       reserved: false,
     };
     return obj;
