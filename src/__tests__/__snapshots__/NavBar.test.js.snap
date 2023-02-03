@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Component Renders correctly 1`] = `
+<nav
+  activekey="/"
+  className="Navbar border-bottom navbar navbar-expand-md navbar-light sticky-top"
+>
+  <div
+    className="NavContainer container"
+  >
+    <a
+      className="LogoContainer SpaceTravelers active navbar-brand"
+      href="/"
+      onClick={[Function]}
+      rel="noopener noreferrer"
+      style={Object {}}
+    >
+      <img
+        alt="Planet logo"
+        className="Logo"
+        src="logo.png"
+      />
+      Space Travelers Hub
+    </a>
+    <button
+      aria-controls="responsive-navbar-nav"
+      aria-label="Toggle navigation"
+      className="navbar-toggler collapsed"
+      onClick={[Function]}
+      type="button"
+    >
+      <span
+        className="navbar-toggler-icon"
+      />
+    </button>
+    <div
+      aria-expanded={null}
+      className="navbar-collapse collapse"
+    >
+      <div
+        className="ms-auto d-flex navbar-nav"
+        onKeyDown={[Function]}
+      >
+        <a
+          className="MyLink  active nav-link"
+          data-rr-ui-event-key="/"
+          disabled={false}
+          href="/"
+          onClick={[Function]}
+          rel="noopener noreferrer"
+          style={Object {}}
+        >
+          Rockets
+        </a>
+        <a
+          className="MyLink nav-link"
+          data-rr-ui-event-key="/Missions/"
+          disabled={false}
+          href="/Missions/"
+          onClick={[Function]}
+          rel="noopener noreferrer"
+          style={null}
+        >
+          Missions
+        </a>
+        <a
+          className="MyLink nav-link"
+          data-rr-ui-event-key="/MyProfile/"
+          disabled={false}
+          href="/MyProfile/"
+          onClick={[Function]}
+          rel="noopener noreferrer"
+          style={null}
+        >
+          <span
+            className="Separator"
+          >
+            |
+          </span>
+          <span>
+            My Profile
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+`;
