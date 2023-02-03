@@ -4,7 +4,7 @@ import {
   Routes,
   Route,
 } from 'react-router-dom';
-import NavBar from './components/Navbar';
+import NavBar from './components/NavBar';
 import Rockets from './components/RocketsContainer';
 import Missions from './components/MissionsContainer';
 import Profile from './components/Profile';
