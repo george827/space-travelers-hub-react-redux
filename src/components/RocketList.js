@@ -2,9 +2,9 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { Card, Button, Badge } from 'react-bootstrap';
 import { PropTypes } from 'prop-types';
-import { reserveRocket, cancelRocket } from '../redux/rockets';
+import { reserveRocket, cancelRocket } from '../redux/rockets/rockets';
 
-function RocketCard({
+function RocketList({
   id,
   rocketName,
   description,
@@ -52,7 +52,7 @@ function RocketCard({
   );
 }
 
-RocketCard.propTypes = {
+RocketList.propTypes = {
   id: PropTypes.number.isRequired,
   rocketName: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
@@ -60,4 +60,4 @@ RocketCard.propTypes = {
   reserved: PropTypes.bool.isRequired,
 };
 
-export default RocketCard;
+export default RocketList;

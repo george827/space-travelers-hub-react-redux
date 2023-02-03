@@ -1,7 +1,7 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { joinMission, leaveMission } from '../redux/missions';
+import { joinMission, leaveMission } from '../redux/missions/missions';
 
 const MissionList = ({
   id, name, description, reserved,
@@ -15,7 +15,7 @@ const MissionList = ({
         <td>
           {
         reserved
-          ? <span className="badge bg-info">Active Member</span>
+          ? <span className="badge bg-info ">Active Member</span>
           : <span className="badge bg-secondary">Not a Member</span>
           }
         </td>
@@ -25,7 +25,7 @@ const MissionList = ({
               ? (
                 <button
                   type="button"
-                  className="btn btn-outline-info"
+                  className="btn btn-outline-danger"
                   onClick={() => dispatch(leaveMission(id))}
                 >
                   Leave mission
@@ -34,7 +34,7 @@ const MissionList = ({
               : (
                 <button
                   type="button"
-                  className="btn btn-outline-secondary"
+                  className="btn btn-outline-info"
                   onClick={() => dispatch(joinMission(id))}
                 >
                   Join Mission

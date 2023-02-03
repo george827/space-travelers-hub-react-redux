@@ -1,10 +1,9 @@
-const GET_MISSIONS_SUCCESS = 'applicationStore/missionsReducer/GET_MISSIONS_SUCCESS';
-const JOIN_MISSION = 'applicationStore/missionsReducer/JOIN_MISSION';
-const LEAVE_MISSION = 'applicationStore/missionsReducer/LEAVE_MISSION';
-const initialState = [];
+const FETCH_MISSIONS = 'GET_MISSIONS_SUCCESS';
+const JOIN_MISSION = 'JOIN_MISSION';
+const LEAVE_MISSION = 'LEAVE_MISSION';
 
 export const getMissionsSuccess = (payload) => ({
-  type: GET_MISSIONS_SUCCESS,
+  type: FETCH_MISSIONS,
   payload,
 });
 
@@ -18,9 +17,11 @@ export const leaveMission = (payload) => ({
   payload,
 });
 
+const initialState = [];
+
 const missions = (state = initialState, action) => {
   switch (action.type) {
-    case GET_MISSIONS_SUCCESS:
+    case FETCH_MISSIONS:
       return [...state, ...action.payload];
 
     case JOIN_MISSION:
@@ -40,21 +41,21 @@ const missions = (state = initialState, action) => {
   }
 };
 
-export default missions;
-
-const url = 'https://api.spacexdata.com/v3/missions';
+const missionsurl = 'https://api.spacexdata.com/v3/missions';
 
 export const getMissions = () => async (dispatch) => {
-  const response = await fetch(url);
+  const response = await fetch(missionsurl);
   const missions = await response.json();
-  const formatMissions = missions.map((e) => {
+  const formatMissions = missions.map((data) => {
     const obj = {
-      mission_id: e.mission_id,
-      mission_name: e.mission_name,
-      description: e.description,
+      mission_id: data.mission_id,
+      mission_name: data.mission_name,
+      description: data.description,
       reserved: false,
     };
     return obj;
   });
   dispatch(getMissionsSuccess(formatMissions));
 };
+
+export default missions;
